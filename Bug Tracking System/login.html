@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial,sans-serif;
+            background-image: url(logBG.png);
+            background-size: contain;
+        }
+        .back-arrow{
+            font-weight: bolder;
+            background-color: #cfdbd1;
+            color: #ccc;
+        }
+        .login-container{
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .login-container h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2{
+            text-decoration: underline;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"]{
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+         }
+         .login-container button{
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+         }
+         .login-container button:hover{
+            background-color: #45a049;
+         }
+         .login-container .forgot-password{
+            text-align: center;
+            margin-top: 10px;
+        }
+         .login-container .forgot-password{
+            color: #4CAF50;
+            text-decoration: none;
+         }
+         .register-link {
+            margin-top: 15px;
+         }
+         .register-link a{
+            color: #007bff;
+            text-decoration: none;
+         }
+         .register-link a:hover{
+            text-decoration: underline;
+         }
+         .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;         
+         }
+    </style>
+</head>
+<body >
+    <div class="login-container">
+        <div class="back">
+            <a href="index.html" class="back-arrow">&#8592; Back</a> 
+        </div>
+        <h2 style="color:green;">LOGIN</h2>
+        <form action="login.jsp">
+            <input type="text" placeholder="Username" name="user" required>
+            <input type="password" placeholder="Password" name="pass" required>
+            <button type="submit">Login</button>
+            <div class="forgot-password">
+                <a href="cha_pass.html">Forgot Password?</a>               
+            </div>
+            <center>
+            <div class="register-link">New User?
+                <a href="register.html"> Register here</a>               
+            </div>  
+            </center>       
+        </form>
+    </div>
+</body>
+</html>
